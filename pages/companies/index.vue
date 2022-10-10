@@ -38,7 +38,7 @@ export default {
       }
     }, 
     async fetch() {
-      this.companies = await this.$axios.get('/company')
+      this.companies = await this.$axios.get('/company?limit=100')
     },
     methods: {
         openCompany() {
